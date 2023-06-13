@@ -1,6 +1,6 @@
 import React from 'react';
 // Here we are importing a CSS file as a dependency
-// import '../styles/Header.css';
+import '../styles/Header.css';
 
 function Header() {
   return (
@@ -11,7 +11,7 @@ function Header() {
         <h1>Daelen Wall</h1>
         <h3>I am a Web Developer</h3>
         </div>
-        {/* <img class="portfolio" src="assets/img/headshot.jpg"/> */}
+        <div class="headshot"></div>
        </section>
     </div>
   );

@@ -1,0 +1,33 @@
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: cornflowerblue;
+ }
+ 
+ .about-text {
+     width: 500px;
+ }
+ 
+ .main {
+     width: 1130px;
+     max-width: 95%;
+     margin: 0 auto;
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+ }
+ 
+ .about-text h1 {
+     color: black;
+     font-size: 75px;
+     text-transform: capitalize;
+     margin-bottom: 20px;
+ }
+ 
+ .about-text p {
+     color: rgb(45, 45, 45);
+     letter-spacing: 1px;
+     line-height: 28px;
+     font-size: 18px;
+     margin-bottom: 45px;
+ }

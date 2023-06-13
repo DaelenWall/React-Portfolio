@@ -1,0 +1,53 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 45px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.logo {
+  color: black;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px   25px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+nav ul li a:hover {
+  color: cornflowerblue;
+  transition: .2s;
+}
+
+
+.content {
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 150px;
+  position: absolute;
+  top: 40%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+
+h1 {
+  color: black;
+  margin: 20px 0px 20px;
+  font-size: 75px;
+}
+

@@ -1,0 +1,20 @@
+.headshot {
+  height: 500px;
+  width: 500px;
+  margin-bottom: 75px;
+  background-image: url("../img/headshot.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-left: 500px;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.hero {
+  height: 700px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../img/calm.png");
+  background-size: cover;
+  background-position: center;
+}
