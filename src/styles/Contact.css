@@ -1,0 +1,31 @@
+.contact {
+    width: 100%;
+    height: 290px;
+    padding: 100px 0px;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+ 
+ .contact-text {
+     width: 500px;
+ }
+ 
+ 
+ .contact h1 {
+     color: black;
+     font-size: 75px;
+     margin-bottom: 20px;
+ }
+ 
+ .contact ul {
+     color: rgb(45, 45, 45);
+     letter-spacing: 1px;
+     line-height: 28px;
+     font-size: 18px;
+     margin-bottom: 45px;
+     list-style-type: square;
+     margin-left: 80px;
+ }
