@@ -33,8 +33,8 @@ function Resume() {
             </ul>
         <h6>Awards</h6>
             <ul>
-                <li>3x Honor Roll Student</li>
-                <li>1x High Honor Roll Student</li>
+                <li>Honor Roll Student</li>
+                <li>High Honor Roll Student</li>
                 <li>Honor Society — Greenwich High School</li>
             </ul>
     </div>

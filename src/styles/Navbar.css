@@ -1,40 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 45px;
-  padding-left: 10%;
-  padding-right: 10%;
+  background-color: #5D7CE6;
+  padding: 80px 20px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .logo {
-  color: black;
+  color: #000000;
   font-size: 35px;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: transform 1s ease-in-out;
+}
+
+.logo:hover {
+  transform: rotate(360deg);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 nav ul li {
   list-style-type: none;
   display: inline-block;
-  padding: 10px   25px;
+  padding: 10px 25px;
+  margin: 0 15px;
 }
 
 nav ul li a {
-  color: black;
+  font-size: 22px;
+  text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold;
-  text-transform: capitalize;
+  color: #000000;
+  display: block;
+  position: relative;
+  padding: 4px 0;
 }
 
-nav ul li a:hover {
-  color: cornflowerblue;
-  transition: .2s;
+nav ul li  a::before{
+  content: "";
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #fff;
+  transition: 0.5s transform ease;
+  transform: scale3d(0,1,1);
+  transform-origin: 0 50%;
 }
-
+nav ul li a:hover::before{
+  transform: scale3d(1,1,1);
+}
+nav ul li a::before{
+  background: purple;
+  transform-origin: 100% 50%;
+}
+nav ul li a:hover::before{
+  transform-origin: 0 50%;
+}
 
 .content {
-
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -46,8 +85,8 @@ nav ul li a:hover {
 }
 
 h1 {
-  color: black;
-  margin: 20px 0px 20px;
+  color: #000000;
+  margin: 20px 0px;
   font-size: 75px;
 }
 
