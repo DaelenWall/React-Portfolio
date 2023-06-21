@@ -11,6 +11,7 @@ nav {
   background-color: #5D7CE6;
   padding: 80px 20px;
   font-family: 'Open Sans Condensed', sans-serif;
+  background-image: linear-gradient(to top, #5000D9, #5D7CE6)
 }
 
 .logo {

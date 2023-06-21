@@ -9,15 +9,15 @@ function Resume() {
     };
 
     return (
-        <section class="resume">
-            <div class="resume-text">
+        <section className="resume">
+            <div className="resume-text">
                 <h1 id="resume">Resume{' '}
                     <button onClick={toggleVisibility}>
                         {isListVisible ? '▲' : '▼'}
                     </button>
                 </h1>
                 {isListVisible && (
-                    <div class="list-items">
+                    <div className="list-items">
                         <h2>Experience</h2>
                         <ul>
                             <li>Happiness Is... Cafe, Greenwich — <em>Barista</em><sub> 2022-Present</sub></li>

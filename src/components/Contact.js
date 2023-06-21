@@ -9,8 +9,8 @@ function Contact() {
   };
 
   return (
-    <section class="contact">
-      <div class="contact-text">
+    <section className="contact">
+      <div className="contact-text">
         <h1 id="contact">Contact Me {' '}
           <button onClick={toggleVisibility}>
             {isListVisible ? '▲' : '▼'}
