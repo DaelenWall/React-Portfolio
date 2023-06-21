@@ -1,16 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../styles/Contact.css'
 
-
 function Contact() {
+  const [isListVisible, setIsListVisible] = useState(false);
+
+  const toggleVisibility = () => {
+    setIsListVisible(!isListVisible);
+  };
+
   return (
     <section class="contact">
       <div class="contact-text">
-        <h1 id="contact">Contact Me</h1>
-        <ul>
-          <li>daelenwall1@gmail.com</li>
-          <li>(860)-992-4334</li>
-        </ul>
+        <h1 id="contact">Contact Me {' '}
+          <button onClick={toggleVisibility}>
+            {isListVisible ? '▲' : '▼'}
+          </button>
+        </h1>
+        {isListVisible && (
+          <ul>
+            <li>Email: <em>daelenwall1@gmail.com</em></li>
+            <li>Phone #: <em>(860)-992-4334</em></li>
+            <li>GitHub: <em>DaelenWall</em></li>
+          </ul>
+        )}
       </div>
     </section>
   );
