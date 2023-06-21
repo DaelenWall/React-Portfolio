@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .about {
     width: 100%;
+    /* horizontal/vertical allignment  */
     padding: 100px 0px;
     background-color: cornflowerblue;
+    font-family: 'Open Sans Condensed', sans-serif;
  }
  
  .about-text {
@@ -23,11 +31,40 @@
      text-transform: capitalize;
      margin-bottom: 20px;
  }
- 
+
+ .about-text h1 button {
+  color: #000000;
+  font-size: 50px;
+  background-color: cornflowerblue;
+  border-radius: 50%;
+  border: none;
+  padding: 0px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.about-text h1 button:hover {
+  background-color: #000000; 
+  color: #fff;
+  cursor: pointer
+}
+
  .about-text p {
-     color: rgb(45, 45, 45);
-     letter-spacing: 1px;
-     line-height: 28px;
-     font-size: 18px;
-     margin-bottom: 45px;
- }
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px; 
+    overflow: hidden;
+    white-space: pre-wrap;
+    animation: typing 2.5s linear ;
+    max-height: 50% ;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }

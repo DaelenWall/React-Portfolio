@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
+*{
+  margin: 0;
+  padding: 0;
+}
+
 .headshot {
   height: 500px;
   width: 500px;
@@ -10,10 +16,12 @@
 }
 
 .hero {
+  display: flex;
   height: 700px;
   width: 100%;
   margin-bottom: 25px;
   background-image: url("../img/calm.png");
   background-size: cover;
   background-position: center;
+  font-family: 'Open Sans Condensed', sans-serif;
 }

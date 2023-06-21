@@ -4,7 +4,6 @@
   padding: 0;
 }
 
-
 nav {
   display: flex;
   align-items: center;
@@ -66,7 +65,7 @@ nav ul li a:hover::before{
   transform: scale3d(1,1,1);
 }
 nav ul li a::before{
-  background: purple;
+  background: #8824e5;
   transform-origin: 100% 50%;
 }
 nav ul li a:hover::before{
