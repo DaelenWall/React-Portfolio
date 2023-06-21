@@ -6,6 +6,7 @@ function Work() {
     return (
         <main>
             <section class="row justify-center">
+            <h1>Work</h1>
                 <div class="card-column">
                     <figure class="card code-card">
                         <h2 class="card-header">HTML and CSS</h2>
