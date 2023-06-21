@@ -1,27 +1,37 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
 
 .headshot {
-  height: 500px;
-  width: 500px;
+  height: 200%;
+  width: 141%;
   margin-bottom: 75px;
   background-image: url("../img/headshot.jpg");
   background-size: cover;
   background-position: center;
-  border-radius: 50%;
+  border-radius: 25% 25% 25% 25%;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 650%;
 }
 
 .hero {
   display: flex;
   height: 700px;
   width: 100%;
-  margin-bottom: 25px;
   background-image: url("../img/calm.png");
   background-size: cover;
   background-position: center;
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+@media (max-width: 900px) {
+  .headshot {
+    margin-left: 200%;
+  }
 }
