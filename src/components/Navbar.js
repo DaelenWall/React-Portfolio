@@ -1,20 +1,40 @@
 import React from 'react';
-import '../styles/Navbar.css'
-
+import '../styles/Navbar.css';
 
 function Navbar() {
+  const handleScroll = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
   return (
     <div>
-        <nav>
-         <h2 class="logo">Portfolio</h2>
-         <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-            <li><a href="#resume">Resume</a></li>
+      <nav>
+        <h2 className="logo">Portfolio</h2>
+        <ul>
+          <li>
+            <a href="#about" onClick={(e) => handleScroll(e, 'about')}>
+              About Me
+            </a>
+          </li>
+          <li>
+            <a href="#work" onClick={(e) => handleScroll(e, 'work')}>
+              Work
+            </a>
+          </li>
+          <li>
+            <a href="#contact" onClick={(e) => handleScroll(e, 'contact')}>
+              Contact Me
+            </a>
+          </li>
+          <li>
+            <a href="#resume" onClick={(e) => handleScroll(e, 'resume')}>
+              Resume
+            </a>
+          </li>
         </ul>
-       </nav>
-
+      </nav>
     </div>
   );
 }
