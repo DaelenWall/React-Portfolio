@@ -10,6 +10,8 @@
     padding: 100px 0px;
     background-color: cornflowerblue;
     font-family: 'Open Sans Condensed', sans-serif;
+    background-image: linear-gradient(to top, blue, #5D7CE6)
+
  }
  
  .about-text {
@@ -35,7 +37,7 @@
  .about-text h1 button {
   color: #000000;
   font-size: 50px;
-  background-color: cornflowerblue;
+  background-image: linear-gradient(to top, blue, #5D7CE6);
   border-radius: 50%;
   border: none;
   padding: 0px 10px;
