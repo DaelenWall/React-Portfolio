@@ -1,6 +1,8 @@
 # React-Portfolio
 UConn Bootcamp Chapter 20 React Challenge
 
+## Live Link
+[Click Me!](https://dw-react-portfolio-87be06064bc3.herokuapp.com/)
 
 ## Description
 In this chapter 20 challenge, I took my knowledge of React and used it to create an interactive React Portfolio.  I now have a valuable asset to use in my journey toward becoming a web developer, as I can use this RReact Portfolio as a representation of my work in the future.
