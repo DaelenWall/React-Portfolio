@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700');
-*{
+
+* {
   margin: 0;
   padding: 0;
 }
@@ -9,6 +10,15 @@
   flex-wrap: wrap;
   background-image: linear-gradient(to bottom, blue, #5D7CE6);
   font-family: 'Open Sans Condensed', sans-serif;
+}
+
+h1 {
+  color: black;
+  font-size: 75px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .justify-center {
@@ -51,7 +61,7 @@
   box-shadow: inset 0px 0px 8px var(--glow), 0 0 15px var(--glow);
   box-shadow: inset 0px 0px 8px #3549ff99, 0 0 15px #6495ed;
   transition: all 0.5s ease-in-out;
-  transform:scale(1.025);
+  transform: scale(1.025);
   transition: 0.2s;
   cursor: pointer;
 }
@@ -87,4 +97,3 @@
 .code-card pre:active {
   user-select: all;
 }
-
