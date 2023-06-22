@@ -5,7 +5,18 @@ function Navbar() {
   const handleScroll = (e, id) => {
     e.preventDefault();
     const element = document.getElementById(id);
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    if (element) {
+      const elementRect = element.getBoundingClientRect();
+      const elementTopOffset = elementRect.top;
+      const windowHeight = window.innerHeight;
+      const offset = Math.max(0, elementTopOffset - windowHeight / 4);
+
+      window.scrollTo({
+        top: offset,
+        behavior: 'smooth',
+      });
+    }
   };
 
   return (
@@ -40,3 +51,4 @@ function Navbar() {
 }
 
 export default Navbar;
+

@@ -32,6 +32,8 @@
 
 @media (max-width: 900px) {
   .headshot {
-    margin-left: 200%;
+    margin-left: 220%;
+    width: 110%;
+    height: 160%
   }
 }
